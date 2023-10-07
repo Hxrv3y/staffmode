@@ -20,7 +20,7 @@ AddEventHandler("vRP:staffon", function(staffmode)
 
         SetPlayerModel(PlayerId(), ped)
         SetModelAsNoLongerNeeded(ped)
-        SetPedComponentVariation(ped, 0, 0, 0, 0) --- https://docs.fivem.net/natives/?_0x262B14F48D29DE80 if you wanna change component or something
+        SetPedComponentVariation(PlayerPedId(), 0, 0, 0, 0) --- https://docs.fivem.net/natives/?_0x262B14F48D29DE80 if you wanna change component or something
     else
         SetEntityInvincible(PlayerPedId(), false)
         tvRP.setCustomization({clothing})
